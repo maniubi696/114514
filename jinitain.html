@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- 页眉 -->
+    <header>
+        <h1>我的个人空间</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#contact">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 照片轮播区 -->
+    <section id="carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide fade">
+                <img src="imgs/1.jpg" alt="照片1">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="imgs/2.jpg" alt="照片2">
+            </div>
+            <div class="carousel-slide fade">
+                <img src="imgs/3.jpg" alt="照片3">
+            </div>
+            <!-- 底部导航 -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section id="about">
+        <h2>关于我</h2>
+        <p>这个人很懒,什么也没有留下。</p>
+        <img src="C:\Users\86175\Desktop\web\imgs\touxiang.jpg" alt="个人头像">
+    </section>
+
+    <!-- 社交媒体链接 -->
+    <footer>
+        <div class="social-media">
+            <a href="imgs/qrcode-wechat.jpg"><img src="imgs/MdiWechat.png" alt="微信"></a>
+            <a href="https://v.douyin.com/iksCagqd/ 5@0.com"><img src="imgs/MingcuteTiktokFill.png" alt="抖音"></a>
+            <a href="https://space.bilibili.com/490558009?spm_id_from=333.1007.0.0"><img src="imgs/AntDesignBilibiliFilled.png" alt="B站"></a>
+            <a href="https://github.com/maniubi696"><img src="imgs/MdiGithub.png" alt="Github"></a>
+        </div>
+        <p>@ Myself 2024</p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html> 
