@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度学习图像处理平台</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#upload">上传图片</a></li>
+                <li><a href="#process">图像处理</a></li>
+                <li><a href="#results">结果下载</a></li>
+                <li><a href="#about">关于我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>深度学习图像处理平台</h1>
+            <p>使用深度学习技术，轻松处理和增强您的图像！</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>图片上传</h3>
+                    <p>支持多种格式，轻松上传</p>
+                </div>
+                <div class="feature">
+                    <h3>灰化处理</h3>
+                    <p>一键将彩色图像转为灰度</p>
+                </div>
+                <div class="feature">
+                    <h3>直方图生成</h3>
+                    <p>快速生成图像直方图</p>
+                </div>
+                <div class="feature">
+                    <h3>空间域增强</h3>
+                    <p>提升图像质量和细节</p>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="#upload" class="btn">开始处理</a>
+                <a href="#about" class="btn btn-secondary">了解更多</a>
+            </div>
+        </section>
+
+        <section id="upload">
+            <h2>上传图片</h2>
+            <div class="upload-area">
+                <input type="file" id="file-input" accept=".jpg,.png" multiple>
+                <label for="file-input" class="file-label">选择文件</label>
+                <p class="file-info">支持的格式：JPG, PNG</p>
+            </div>
+            <div id="preview-area"></div>
+            <div class="upload-buttons">
+                <button id="upload-btn" class="btn">上传图片</button>
+                <button id="reupload-btn" class="btn btn-secondary">重新上传</button>
+            </div>
+        </section>
+
+        <section id="process">
+            <h2>选择图像处理操作</h2>
+            <div id="uploaded-image"></div>
+            <form id="process-form">
+                <div class="process-option">
+                    <input type="radio" id="grayscale" name="process" value="grayscale">
+                    <label for="grayscale">彩图灰化</label>
+                </div>
+                <div class="process-option">
+                    <input type="checkbox" id="histogram" name="histogram">
+                    <label for="histogram">直方图生成</label>
+                </div>
+                <div class="process-option">
+                    <input type="checkbox" id="spatial" name="spatial">
+                    <label for="spatial">空间域增强</label>
+                    <input type="number" id="kernel-size" name="kernel-size" min="3" max="9" step="2" value="3">
+                    <label for="kernel-size">内核大小</label>
+                </div>
+                <button type="submit" class="btn">开始处理</button>
+            </form>
+            <div id="process-status"></div>
+        </section>
+
+        <section id="results">
+            <h2>处理结果</h2>
+            <div id="result-image"></div>
+            <div id="download-buttons" style="display: none;">
+                <button id="download-image" class="btn">下载处理后的图像</button>
+                <button id="download-histogram" class="btn">下载直方图</button>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>关于我们</h2>
+            <p>我们是一个致力于利用深度学习技术改进图像处理的团队。</p>
+            <h3>联系方式</h3>
+            <p>邮箱：contact@example.com</p>
+            <p>电话：123-456-7890</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 深度学习图像处理平台. 保留所有权利。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* 鍏ㄥ眬鏍峰紡 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* 澶撮儴鏍峰紡 */
+header {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 涓昏鍐呭鏍峰紡 */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* 鐗规€у睍绀烘牱寮� */
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex-basis: 22%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* 鎸夐挳鏍峰紡 */
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* 涓婁紶鍖哄煙鏍峰紡 */
+.upload-area {
+    border: 2px dashed #3498db;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* 琛ㄥ崟鏍峰紡 */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.process-option {
+    margin-bottom: 1rem;
+}
+
+/* 鍝嶅簲寮忚璁� */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+    }
+    
+    .feature {
+        flex-basis: 100%;
+    }
+}
+
+.upload-buttons {
+    margin-top: 1rem;
+}
+
+/* 棰勮鍥剧墖鏍峰紡 */
+.preview-image {
+    max-width: 200px;  /* 璁剧疆鏈€澶у搴� */
+    max-height: 200px; /* 璁剧疆鏈€澶ч珮搴� */
+    width: auto;       /* 淇濇寔瀹介珮姣� */
+    height: auto;      /* 淇濇寔瀹介珮姣� */
+    margin: 10px;      /* 娣诲姞涓€浜涜竟璺� */
+    object-fit: contain; /* 纭繚鏁翠釜鍥剧墖閮芥樉绀猴紝涓嶈鍓� */
+}
+
+#preview-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
